@@ -93,8 +93,9 @@
                         <sourceDestDir>src/main/java</sourceDestDir>
                         <packageName>es.unican.ss.client</packageName>
                     </configuration>
-                </execution>
+                </execution>                
             </executions>
+            
         </plugin>
     </plugins>
     
@@ -119,6 +120,7 @@
     								</versionRange>
     								<goals>
     									<goal>wsimport</goal>
+    									<goal>wsgen</goal>
     								</goals>
     							</pluginExecutionFilter>
     							<action>
@@ -129,6 +131,16 @@
     				</lifecycleMappingMetadata>
     			</configuration>
     		</plugin>
+    		<plugin>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<genWsdl>true</genWsdl>
+					<inlineSchemas>true</inlineSchemas>
+					<resourceDestDir>src/main/webapp/WEB-INF/wsdl</resourceDestDir>
+				</configuration>
+			</plugin>
     	</plugins>
     </pluginManagement>
   </build>
