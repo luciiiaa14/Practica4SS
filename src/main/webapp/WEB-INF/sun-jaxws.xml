@@ -4,8 +4,12 @@
     <endpoint 
         implementation="es.unican.ss.business.ConsultaAutobuses" 
         name="ConsultaAutobusesService" 
-        url-pattern="/ConsultaAutobuses" 
-        wsdl="WEB-INF/wsdl/IConsultaAutobuses.wsdl"
+        wsdl="WEB-INF/wsdl/ConsultaAutobusesService.wsdl"
+        url-pattern="/*"
     />
 
 </endpoints>
+
+
+
+
