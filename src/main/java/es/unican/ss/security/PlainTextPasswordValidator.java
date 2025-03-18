@@ -1,4 +1,4 @@
-package es.unican.ss.helloWorld;
+package es.unican.ss.security;
  
 import com.sun.xml.wss.impl.callback.PasswordValidationCallback;
  
